@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passsword Generator Helper</title>
+        <link rel="stylesheet" type="text/css" href="style_refactor.css">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <script language="javascript" type="text/javascript">
+            function generate1()
+            {
+            }
+
+            function generate2()
+            {
+            }
+
+            function generate()
+            {
+            }
+        </script>
+    </head>
+    <body onload="">
+        <div class="container">
+            <div id="header">
+                <div id="logoText">
+                    Password Generator Helper
+                </div>
+            </div>
+
+            <div id="options">
+                <div class="checkboxl">Password Length:</div>
+                <div class="checkboxr">
+                    <select name="passwordLength" id="passwordLength" onclick="">
+                        <optgroup label="Weak">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </optgroup>
+                        <optgroup label="Strong">
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="20">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="checkboxl">Include Numbers:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="Numbers" id="Numbers" onclick="">( e.g. 123456 )</label></div>
+
+                <div class="checkboxl">Include Lowercase Characters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="Lowercase" id="Lowercase" onclick="">( e.g. abcdefgh )</label></div>
+
+                <div class="checkboxl">Include Uppercase characters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="Uppercase" id="Uppercase" onclick="">( e.g. ABCDEFGH )</label></div>
+
+                <div class="checkboxl">Begin With A Letters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="BeginWithA" id="BeginWithA" onclick="">( don't begin with a number or symbol )</label></div>
+
+                <div class="checkboxl">Include Symbols:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="Symbols" id="Symbols" onclick=""></label>
+                    <!-- <input name="customizeSymbols" id="customizeSymbols" type="text" size="75" value="!&quot;#$%&amp;'()*+,-./:;<=>?@[\]^_`{|}~"> -->
+                    <input name="CustomizeSymbols" id="CustomizeSymbols" type="text" size="75" value="!&quot;#$%&amp;'()*+,-./:;<=>?@[\]^_`{|}~" class="txt_options" onkeyup="">
+                </div>
+
+                <div class="checkboxl">No Similar Characters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="NoSimilar" id="NoSimilar" onclick="">( don't use characters like i, l, 1, L, o, 0, O, etc. )</label></div>
+
+                <div class="checkboxl">No Duplicate Characters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="NoDuplicate" id="NoDuplicate" onclick="">( don't use the same character more than once )</label></div>
+
+                <div class="checkboxl">No Sequential Characters:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="NoSequential" id="NoSequential" onclick="">( don't use sequential characters, e.g. abc, 789 )</label></div>
+
+                <div class="checkboxl">Auto Generate On The First Call:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="AutoGenerate" id="AutoGenerate" onclick="">( generate passwords automatically when you open this page )</label></div>
+
+                <div class="checkboxl">Quantity:</div>
+                <div class="checkboxr">
+                    <select name="passwordQuantity" id="passwordQuantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>		
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+
+                <div class="checkboxl">Save My Preference:</div>
+                <div class="checkboxr"><label><input type="checkbox" name="SavePreference" id="SavePreference" onclick="">( save all the settings above in cookies )</label></div>
+            </div>
+
+            <div id="buttons">
+                <div class="button generateBtn" onclick="generate2();">Generate( v2 )</div>
+                <div class="button copyBtn" onclick="generate1();">Generate( v1 )</div>
+                <div class="button copyBtn" id="copyOne" onclick="onCopyOne();">Copy the 1st Line</div>
+                <div id="tooltip1" class="customTooltip">copied!</div>
+                <div class="button copyBtn" id="copyAll" onclick="onCopyAll();">Copy all</div>
+                <div id="tooltip2" class="customTooltip">copied!</div>
+            </div>
+
+            <div id="passwords">
+                <div class="checkboxl">Your New Pasword:</div>
+                <div class="checkboxr2">
+                    <div id="line_num" style="line-height: 26px; height: 140px;">
+                        <div id="line1" class="each_line">1</div>
+                        <div id="line2" class="each_line">2</div>
+                        <div id="line3" class="each_line">3</div>
+                        <div id="line4" class="each_line">4</div>
+                        <div id="line5" class="each_line">5</div>
+                    </div>
+                    <textarea name="password_area" id="password_area" class="password_area" value="Your new password will appear here." spellcheck="false"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
